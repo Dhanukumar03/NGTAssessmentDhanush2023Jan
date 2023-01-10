@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -42,7 +43,8 @@ public class AppTests {
 	  String productName = property.getProperty("appProduct");
 	  home.launchBrowser(Url);
 	  home.searchProduct(productName);
-	  product.verifyPageTitle(pageTitle);
+	  String pgTitle=product.verifyPageTitle(pageTitle);
+	  Assert.assertEquals(pgTitle, pageTitle,"No product found");
   }
   
   @AfterMethod

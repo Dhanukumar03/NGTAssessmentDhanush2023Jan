@@ -11,9 +11,10 @@ public class ProductsPage {
 	  this.driver=driver;
   }
   
-  public void verifyPageTitle(String expectedPageTitle) {
+  public String verifyPageTitle(String expectedPageTitle) {
 	  String actualPageTitle=driver.getTitle();
-	  Assert.assertEquals(actualPageTitle, expectedPageTitle,"No product found");
-	  System.out.println("Products found ");
+	  return actualPageTitle;
+	  
+	  
   }
 }

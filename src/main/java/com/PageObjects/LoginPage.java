@@ -16,6 +16,7 @@ public class LoginPage {
 		driver.findElement(By.xpath("//button[contains(text(),'LOGIN')]")).click();
 		Thread.sleep(30000);
 		driver.findElement(By.xpath("//button[contains(text(),'LOGIN')]")).click();
+		Thread.sleep(10000);
 	}
 
 }
