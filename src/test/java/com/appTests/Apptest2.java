@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import com.PageObjects.BagPage;
 import com.PageObjects.HomePage;
 import com.PageObjects.LoginPage;
-
+//changes
 public class Apptest2 {
 	WebDriver driver;
 	  HomePage home;
